@@ -50,7 +50,7 @@ switch (age) {
         
         break;
     case 23:
-            console.log("you are 23");
+            console.log("you are 22");
         
         break;
 
