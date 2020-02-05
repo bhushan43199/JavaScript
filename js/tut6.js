@@ -9,7 +9,7 @@ const greeting = 'Good Morning';
 
 let html;
 
-html = "<h1> This is Heading <h1>"+
+html = "<h1> This is Heading <h1>" +
         "<p> This is my Para</p>";
 html = html.concat('this', ' str2');
 //console.log(html);

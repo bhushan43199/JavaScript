@@ -1,21 +1,21 @@
 var name = "montu";
-console.log("My name is "+name);
+console.log("My name is " + name);
 var age = "22";
-console.log("my age is " +age);
-console.log("Data type is "+(typeof age));
+console.log("my age is " + age);
+console.log("Data type is " + (typeof age));
 
 let isDriver = true;
-console.log("Data type is "+(typeof isDriver));
+console.log("Data type is " + (typeof isDriver));
 
 //null
 
 let nullVar = null;
-console.log("Datatype is " +(typeof nullVar));
+console.log("Datatype is " + (typeof nullVar));
 
 
 //Array
 
-myarr = [10,20,30,40,50];
+myarr = [10, 20, 30, 40, 50];
 console.log("Datatype is " + (typeof myarr));
 
 myarr.pop(40);
@@ -25,17 +25,17 @@ console.log(myarr);
 //Objective Literals
 
 let marks = {
-    montu:98,
-    sucheta:95,
-    jay:94
+    montu: 98,
+    sucheta: 95,
+    jay: 94
 
 }
 console.log(marks);
 
 //function
-function findName(name,age) {
-    
+function findName(name, age) {
+
 }
- console.log(findName);
- console.log(typeof findName);
- 
+console.log(findName);
+console.log(typeof findName);
+

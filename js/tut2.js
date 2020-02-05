@@ -1,7 +1,7 @@
 console.time('mycode');
 console.log('hello console');
-console.log(5+35);
-console.table({name : "montu", marks:100});
+console.log(5 + 35);
+console.table({ name: "montu", marks: 100 });
 console.warn("this is a warning");
 /* console.clear();*/
 console.timeEnd('mycode');
