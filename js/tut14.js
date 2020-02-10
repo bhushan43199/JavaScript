@@ -35,6 +35,11 @@ console.log(elems);
 Array.from(elems).forEach(element => {
     console.log(element);
     element.style.color = 'blue';
-    
+
 });
 
+for (let index = 0; index < elems.length; index++) {
+    const element = elems[index];
+    console.log(element);
+
+}
