@@ -37,4 +37,4 @@ myul.replaceChild(element, document.getElementById('fui')); // replace child
 myul.removeChild(document.getElementById('lui'));
  
 let pr = elem2.hasAttribute('id')
-console.log(elem2,pr)
+console.log(elem2.pr);
