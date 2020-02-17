@@ -20,7 +20,7 @@ console.log(element);
 let elem2 = document.createElement('h3');
 
 elem2.id = 'elem2';
-elem2.className ='elem2';
+elem2.className = 'elem2';
 let tnode = document.createTextNode('this is a created node for second child');
 elem2.appendChild(tnode);
 
@@ -35,6 +35,6 @@ let myul = document.getElementById('myul');
 myul.replaceChild(element, document.getElementById('fui')); // replace child
 
 myul.removeChild(document.getElementById('lui'));
- 
+
 let pr = elem2.hasAttribute('id')
 console.log(elem2.pr);
