@@ -7,6 +7,10 @@ document.getElementById('heading').addEventListener('click', function(e){
     variable = e.target;
     variable = e.target.classList;
     variable = e.target.dispatchEvent;
+    variable = e.clientX;
+    variable = e.clientY;
+    variable = e.offsetX;
+    
     
     console.log(variable);
 });
