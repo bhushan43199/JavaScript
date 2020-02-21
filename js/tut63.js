@@ -59,3 +59,10 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+// nodeJs follow REPL (read Eveluate print)
+// in REPL ("_") Refers last variable 
+// a = 45;
+// _+5
+// 50
