@@ -1,9 +1,9 @@
 // delete from mongodb
-
-show dbs:
-use montukart
-show collections
-
+//
+//show dbs:
+//use montukart
+//show collections
+//
 db.items.find({rating: 9})
 
 
