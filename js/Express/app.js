@@ -6,9 +6,25 @@
 
 const express = require("express")
 const port = 80;
+var mongoose = require('mongoose');
+const bodyparser = require('body-parser');
+mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true});
 const path = require("path");
 const app = express();
 
+// define mongoose schema
+
+var contactSchema = new mongoose.Schema({
+    name: String,
+    age: String,
+    gender: String,
+    address: String,
+    more: String,
+    
+  });
+
+
+  var Contact = mongoose.model('Contact', contactSchema);
 // EXPRESS SPECIFIC STUFF-------------------------------
 
 app.use('/static', express.static('static')) // for serving static files 
@@ -52,13 +68,23 @@ app.get('/', (req,res)=>{
     res.status(200).render('index.pug')  // vew use render here because we are using templates 
 })
 
-
-app.post('/',(req,res)=>{
-    //console.log(req.body)
-    //name = req.body.name;
-    res.status(200).render('index.pug');
-    //const params = {'message': "Your form has been submitted"}
+app.post('/', (req,res)=>{
+    var myData = new Contact(req.body)
+    myData.save().then(()=>{
+        res.send("This item has been saved to the Database")
+    }).catch(()=>{
+        res.status(400).send("Item was not send to Database")
+    });
+    //res.status(200).render('index.pug')  // vew use render here because we are using templates 
 })
+
+
+//app.post('/',(req,res)=>{
+//    //console.log(req.body)
+//    //name = req.body.name;
+//    res.status(200).render('index.pug');
+//    //const params = {'message': "Your form has been submitted"}
+//})
 
 //START THE SERVER------------------------------
 app.listen(port, () => {
